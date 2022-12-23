@@ -1,7 +1,7 @@
 OUTPUT_FILE = "output.csv"
 
 # TODO реализовать функцию to_csv_file
-def to_csv_file(filename, headers, rows, delimiter = ",", new_line = "\n"):
+def to_csv_file(filename, headers, rows, delimiter=",", new_line="\n"):
     with open(filename, "w") as f:
         f.write(delimiter.join(headers))
         f.write(new_line)
@@ -18,7 +18,7 @@ data = [
 ]
 
 # TODO вызвать функцию to_csv_file и записать данные в файл
-to_csv_file(OUTPUT_FILE, headers_list, data, delimiter = ",", new_line = "\n")
+to_csv_file(OUTPUT_FILE, headers_list, data, delimiter=",", new_line="\n")
 
 with open(OUTPUT_FILE) as output_f:
     for line in output_f:
